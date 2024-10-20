@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+    int x ;
+    cout << "\n hit the enemy ----->> !! 1000 or 100 :\n";
+    cin >> x;
+
+    int lvls;
+
+switch (x)
+{
+    case 1000:
+
+       cout << " \nyou lvl ((up))\n"; 
+   lvls++;
+
+   cout <<" \n*****congratulation****\n your are leveled up +1\n "<< lvls <<":::";
+  
+    break;
+
+case 100:
+   cout << " \nyou lvl ((up))\n"; 
+   lvls++;
+
+   cout <<" \n*****congratulation****\n your are leveled up +1\n "<< lvls <<":::";
+  
+    break;
+
+default:
+  cout << "\nyou failed (o-o)\n ";
+   lvls--;
+    cout <<"\n unfortunatly you failed to leveled up \n "<< lvls <<":::";
+    break;
+}
+return 0;
+}
